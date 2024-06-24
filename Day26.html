@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73ad21;
+            padding: 10px;
+            text-align: center;
+        } */
+        .center {
+            /* line-height: 200px;
+             */
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid green;
+            /* text-align: center; */
+        }
+
+        .center p {
+            /* line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle; */
+            /* margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        } */
+
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .right {
+            float: right;
+            width: 300px;
+            border: 3px solid #73ad21;
+            padding: 10px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+    <div class="center">
+        <p>Hello World!</p>
+    </div>
+    <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris" style="width: 40%" />
+    <div class="right">
+        <p>
+            In my younger and more vulnerable years my father gave me some advice
+            that I've been turning over in my mind ever since.
+        </p>
+    </div> -->
+    <div>
+        <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170" />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet...
+    </div>
+    <div class="clearfix">
+        <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <div class="center">
+        <p>I am vertically centered.</p>
+    </div>
+</body>
+
+</html>
