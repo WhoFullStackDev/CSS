@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #grad1 {
+        height: 55px;
+        background-color: red;
+        /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+
+        /* background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        ); */
+
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <p>
+      This linear gradient starts red at the top, transitioning to yellow at the
+      bottom:
+    </p>
+
+    <div id="grad1"></div>
+  </body>
+</html>
