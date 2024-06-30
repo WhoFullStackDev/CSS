@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: #f1f1f1;
+      }
+
+      .flex-container > div {
+        background-color: DodgerBlue;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      #div1 {
+        /* order: 2; */
+        /* flex-grow: 1; */
+      }
+      #div3 {
+        /* order: 4; */
+        /* flex-grow: 8; */
+        /* flex-shrink: 0; */
+        /* flex-basis: 200px; */
+        flex: 0 0 200px;
+        /* align-self: center; */
+        /* align-self: flex-start */
+        align-self: flex-end;
+      }
+      #div4 {
+        /* order: 3; */
+        /* flex-grow: 1; */
+      }
+
+      #div2 {
+        /* order: 1; */
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexible Items</h1>
+
+    <div class="flex-container">
+      <div id="div1">1</div>
+      <div id="div2">2</div>
+      <div id="div3">3</div>
+      <div id="div4">4</div>
+    </div>
+
+    <p>All direct children of a flexible container becomes flexible items.</p>
+  </body>
+</html>
